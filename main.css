@@ -111,7 +111,12 @@ li a {
 
 #mainImg{
     margin-left: 50em;
-    transform: translateY(-5rem);
+    transform: translateY(-9rem) translateX(9rem);
+}
+
+.section-Text{
+    margin-left: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -138,7 +143,7 @@ li a {
 .backEndSkills{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   background-color: rgba(153, 152, 152, 0.1);
+   box-shadow: 0px 0px 27px -10px rgba(0,0,0,.3);
    border-radius: 2rem;
    grid-gap: 2rem;
    margin-left: 0px;
@@ -149,7 +154,7 @@ li a {
 .frontEndSkills{
     display: grid;
     grid-template-rows: min-content;
-    background-color: rgba(153, 152, 152, 0.1);
+    box-shadow: 0px 0px 27px -10px rgba(0,0,0,.3);
     border-radius: 2rem;
     grid-gap: 2rem;
 }
@@ -161,7 +166,48 @@ li a {
     justify-self: center;
 }
 
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+
+}
+
+.project{
+    box-shadow: 0px 0px 27px -10px rgba(0,0,0,.3);
+    border-radius: 1rem;
+    padding: 10px;
+    width: 45%;
+    margin: 2rem;
+}
+
+#project-text{
+    font-size: 1.5rem;
+}
+
+.project .btn{
+    margin-left: auto;
+}
+
+.stackSkill{
+    height: 5rem;
+    width: 5rem;
+}
+
+.footerPage{
+    text-align: center;
+}
+.footer-links img{
+    height: 4rem;
+    width: 4rem;
+}
+
 @media only screen and (max-width: 600px) {
+
+    body{
+        overflow: visible;
+    }
 
    
     #menuWave{
@@ -224,7 +270,7 @@ li a {
 
     #mainImg{
         margin-left: 1rem;
-        margin-top: 9rem;
+        margin-top: 5rem;
         max-width: 300px;
         max-height: 300px;
         transform: translateY(0%);
@@ -262,5 +308,43 @@ li a {
     }
 
 
+    .projects{
+        padding: 0rem; 
+    }
+
+    .project{
+        box-shadow: 0px 0px 27px -10px rgba(0,0,0,.3);
+        border-radius: 1rem;
+        width: 100%;
+        padding: 10px;
+        margin: 1rem;
+
+    }
+
+    #project-text{
+        font-size: 1.5rem;
+    }
+
+    .project .btn{
+        margin-left: auto;
+    }
+
+    .stackSkill{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .section-Text{
+        text-align: center;
+    }
+
+
+    .footerPage{
+        text-align: center;
+    }
+    .footer-links img{
+        height: 4rem;
+        width: 4rem;
+    }
 
 }
