@@ -15,6 +15,28 @@
     vertical-align: baseline;
 }
 
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-myblack);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(200deg, #3C7ED6, #4B9BE1)
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color2);
+  }
+
 html{
     font-family: 'Montserrat', sans-serif;
     
